@@ -13,7 +13,7 @@ public class LoginPage {
 	@FindBy (name="email")
 	WebElement emailidTxt;
 	
-	@FindBy (name ="password1")
+	@FindBy (name ="password")
 	WebElement passwordTxt;
 	
 	@FindBy (xpath = "//div[@class='ui fluid large blue submit button']")
