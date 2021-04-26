@@ -37,11 +37,12 @@ public class BaseClass {
 		report.attachReporter(extent);
 	}
 	
-	@Parameters("browser")
+	@Parameters({"browser_pom", "url_pom"})
 	@BeforeClass
-	public void setup(String browser)
+	public void setup(String browser, String url)
 	{
-		driver = BrowserFactory.startApplication(driver,browser, config.getStringURL());
+		//driver = BrowserFactory.startApplication(driver,config.getBrowser(), config.getStringURL());
+		driver = BrowserFactory.startApplication(driver,browser, url);
 		
 	}
 	@AfterClass

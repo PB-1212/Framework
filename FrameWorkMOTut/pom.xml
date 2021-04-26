@@ -76,10 +76,11 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+						<suiteXmlFile>XMLFiles/${xmlFile_pom}</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
-						<executionBrowser>${browser}</executionBrowser>
+						<executionBrowser>${browser_pom}</executionBrowser> 
+						<appURL>${url_pom}</appURL>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

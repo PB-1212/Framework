@@ -2,8 +2,6 @@ package com.automation.utility;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelDataProvider {
