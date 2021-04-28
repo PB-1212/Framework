@@ -36,7 +36,7 @@ public class BrowserFactory {
 			else
 				System.out.println("We do not support such browser");
 			
-			driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.get(url);
